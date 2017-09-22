@@ -13,4 +13,4 @@ for h in hosts_list:
 
 with open('output.txt', 'w') as f:
     for l in output_list:
-        f.write(l+'\n')
+        f.write('{}\n'.format(l))
