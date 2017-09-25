@@ -10,7 +10,7 @@ import re
 
 
 def test_bleed(url, args):
-    r = requests.options(url, timeout=10)
+    r = requests.options(url, timeout=10, allow_redirects=True)
     try:
         allow = str(r.headers["Allow"])
     except KeyError:
